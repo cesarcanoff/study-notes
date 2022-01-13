@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Aula 16</title>
+  </head>
+  <body>
+    <script>
+      let firstNumber = parseFloat(prompt('Primeiro Número: '));
+      let operationSignal = parseInt(
+        prompt(`
+      [ 1 ] - Adição (+)
+      [ 2 ] - Subtração (-)
+      [ 3 ] - Multiplicação (*)
+      [ 4 ] - Divisão (/)`)
+      );
+
+      while (operationSignal > 5 || operationSignal < 1) {
+        alert('[ERRO] Valor de Sinal inválido, por favor insira de 1 a 4.');
+        operationSignal = parseInt(
+          prompt(`
+      [ 1 ] - Adição (+)
+      [ 2 ] - Subtração (-)
+      [ 3 ] - Multiplicação (*)
+      [ 4 ] - Divisão (/)`)
+        );
+      }
+
+      let lastNumber = parseFloat(prompt('Segundo Número: '));
+      let valueOperationFinal = 0;
+
+      switch (operationSignal) {
+        case 1:
+          valueOperationFinal = firstNumber + lastNumber;
+          alert(
+            `Operação realizada com sucesso\n${firstNumber} + ${lastNumber} = ${valueOperationFinal.toFixed(2)}`);
+          break;
+        case 2:
+          valueOperationFinal = firstNumber - lastNumber;
+          alert(
+            `Operação realizada com sucesso\n${firstNumber} - ${lastNumber} = ${valueOperationFinal.toFixed(2)}`);
+          break;
+        case 3:
+          valueOperationFinal = firstNumber * lastNumber;
+          alert(
+            `Operação realizada com sucesso\n${firstNumber} * ${lastNumber} = ${valueOperationFinal.toFixed(2)}`);
+          break;
+        case 4:
+          valueOperationFinal = firstNumber / lastNumber;
+          alert(
+            `Operação realizada com sucesso\n${firstNumber} / ${lastNumber} = ${valueOperationFinal.toFixed(2)}`);
+          break;
+      }
+    </script>
+  </body>
+</html>

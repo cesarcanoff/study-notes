@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Aula 15</title>
+  </head>
+  <body>
+    <script>
+      let anoAtual = new Date().getFullYear();
+      let anoNascimento = parseInt(prompt('Informe seu ano de nascimento: '));
+
+      while (anoNascimento >= anoAtual) {
+        alert('[ERRO] - Por favor, insira seu ano de nascimento corretamente.');
+        anoNascimento = parseInt(prompt('Informe seu ano de nascimento: '));
+      }
+
+      let idadeFinal = (anoAtual - anoNascimento);
+
+      alert(`Você tem, ou irá fazer ${idadeFinal}`);
+    </script>
+  </body>
+</html>
