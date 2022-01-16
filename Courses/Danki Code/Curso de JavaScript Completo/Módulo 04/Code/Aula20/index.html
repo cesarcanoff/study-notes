@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Aula 20</title>
+  </head>
+  <body>
+    <script>
+      function Person() {
+        this.name = 'César';
+        this.age = 17;
+        this.showName = function () {
+          console.log(this.name);
+        };
+        this.returnAnimal = function (animal) {
+          return animal;
+        }
+      }
+      var person = new Person();
+      var animal = new Animal('Dog');
+
+      person.showName();
+
+      function Animal(name) {
+        if (name == undefined) {
+          name = 'Dog';
+        } else {
+          this.name = name;
+        }
+      }
+
+      console.log(animal.name);
+    </script>
+  </body>
+</html>

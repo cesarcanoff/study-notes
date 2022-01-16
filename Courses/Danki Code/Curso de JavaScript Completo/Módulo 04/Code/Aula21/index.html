@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Aula 21</title>
+  </head>
+  <body>
+    <script>
+      class Animal {
+        constructor (name) {
+          this.name = name;
+        }
+
+        printName() {
+          return this.name;
+        }
+      }
+
+      class Dog extends Animal { // EXTENDENDO DA CLASSE ANIMAL.
+          constructor (name) {
+            super(name); // INVOCANDO O CONSTRUTOR DA CLASSE PAI.
+            this.raca = 'Bulldog';
+          }
+
+          printRaca() {
+            return this.raca;
+          }
+      }
+
+      dog = new Dog('Rocky');
+      console.log(dog.printName());
+      console.log(dog.printRaca());
+    </script>
+  </body>
+</html>
