@@ -1,0 +1,12 @@
+.box {
+  width: 200px;
+  height: 200px;
+  background-color: blue;
+}
+
+.animationLeft {
+  transition: 1.3s;
+  margin-left: 90px;
+  margin-top: 90px;
+  background-color: yellow;
+}
