@@ -23,5 +23,4 @@ echo '</pre>';
 $arr = ['<p>César</p>', 'Caio', 'Luiz', '<h1>Anna</h1>'];
 // APLICA UMA FUNÇÃO EM TODOS OS DADOS DO ARRAY.
 print_r(array_map('strip_tags', $arr));
-
 ?>
