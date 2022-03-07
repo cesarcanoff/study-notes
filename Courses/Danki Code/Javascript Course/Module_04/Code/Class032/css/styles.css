@@ -1,0 +1,41 @@
+.container {
+  position: relative;
+  height: 500px;
+}
+
+.container img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  opacity: 0;
+  transition: 2s;
+}
+
+.bullets {
+  text-align: center;
+}
+
+.bullet-single {
+  margin: 25px auto;
+  cursor: pointer;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  background-color: rgb(202, 202, 202);
+}
+
+.active-bullet {
+  background-color: rgb(117, 113, 113);
+}
+
+
+
+
+
+
+
+
+
+
