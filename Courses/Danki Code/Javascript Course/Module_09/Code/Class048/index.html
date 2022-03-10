@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Pokedex</title>
+  </head>
+  <body>
+    <div class="main">
+      <h2>Pokedex</h2>
+
+      <div class="pokemon-boxes">
+        <div class="pokemon-box">
+          <img
+            src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/132.png"
+            alt=""
+          />
+          <p>Dito</p>
+        </div>
+        <div class="pokemon-box">
+          <img
+            src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/132.png"
+            alt=""
+          />
+          <p>Dito</p>
+        </div>
+        <div class="pokemon-box">
+          <img
+            src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/132.png"
+            alt=""
+          />
+          <p>Dito</p>
+        </div>
+        <div class="pokemon-box">
+          <img
+            src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/132.png"
+            alt=""
+          />
+          <p>Dito</p>
+        </div>
+        <div class="pokemon-box">
+          <img
+            src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/132.png"
+            alt=""
+          />
+          <p>Dito</p>
+        </div>
+        <div class="pokemon-box">
+          <img
+            src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/132.png"
+            alt=""
+          />
+          <p>Dito</p>
+        </div>
+      </div>
+    </div>
+    <script>
+      fetch ('https://pokeapi.co/api/v2/pokemon?limit=10')
+      .then(response => response.json())
+      .then(allpokemon => console.log(allpokemon));
+    </script>
+  </body>
+</html>
