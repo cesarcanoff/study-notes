@@ -1,0 +1,3 @@
+# Aula 05 - Instalando Extensões para o VSCode
+
+Apenas instalação de extensões...
