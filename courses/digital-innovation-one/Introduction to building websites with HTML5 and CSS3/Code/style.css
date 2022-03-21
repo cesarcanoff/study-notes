@@ -1,0 +1,14 @@
+body {
+  background-color: #000;
+  height: 100%;
+  padding: 2%;
+}
+
+h1, h2, h3 {
+  color: red;
+}
+
+h3 {
+  font-size: 66px;
+  font-style: italic;
+}
