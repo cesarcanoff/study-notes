@@ -1,6 +1,15 @@
-## Hello, World!
-This repository aims to date my studies, where I store and report all the contents of courses, events, lectures and workshops that I have taken.
-Here may be contained notes and private content, if you are the rights holder or something similar, please contact me, the content will be removed as soon as I see your request.
-OBS: Under no circumstances am I collaborating with piracy or the like.
+<img height="200px" width="100%" src="https://i.imgur.com/7KczJua.jpg" />
+<div align="center">
+  <h1>🔥:book: REPOSITORY OF STUDIES :book:🔥</h1>
+</div>
 
-Greetings, CesarCanoff!
+This repository aims to store, organize and date all my studies in the technology/programming area, here will be presented: **notes**, **exercises**, **projects** and **derivatives** of the following topics:
+- Courses;
+- Bootcamps
+- Lectures;
+- Workshops;
+- Technological events in general.
+
+Note: Here may contain some content of **private/paid** nature, in no way am I helping, **sharing**, **stimulating**, **encouraging** or **inducing** any kind of **piracy**, this repository is for **studies**, and I strongly urge you ladies and gentlemen who may view this content, not to go beyond this.
+
+Greetings, **Cesar Canoff**.
