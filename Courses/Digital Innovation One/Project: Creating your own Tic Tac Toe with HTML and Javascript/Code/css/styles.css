@@ -5,7 +5,38 @@
   box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
   height: 100%;
 }
 
+body {
+  text-align: center;
+}
+
+.square {
+  text-align: center;
+  width: 90px;
+  height: 90px;
+  padding: 10px;
+  background-color: #eee;
+  display: inline-block;
+  font-size: 40px;
+  margin: 5px;
+  cursor: pointer;
+  color: #eee;
+}
+
+.player,
+.winner {
+  font-size: 38px;
+  margin-top: 18px;
+}
+
+button {
+  width: 100px;
+  height: 30px;
+  background-color: #eee;
+  cursor: pointer;
+  margin-top: 10px;
+}
