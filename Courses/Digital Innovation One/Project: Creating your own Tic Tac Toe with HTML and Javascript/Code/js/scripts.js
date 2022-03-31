@@ -1,10 +1,14 @@
-var player, winner
+var player, winner = null;
 var selectPlayer = document.getElementById('selectPlayer')
 var selectWinner = document.getElementById('selectWinner')
 
 changePlayer('X')
 
 function chooseSquare(elementId) {
+
+  if (winner !== null) {
+    return;
+  }
   let square = document.getElementById(elementId)
   if (square.innerHTML === '-') {
     square.innerHTML = player
@@ -18,7 +22,7 @@ function chooseSquare(elementId) {
     return
   }
   changePlayer(player)
-  WinnerCheck()
+  winnerCheck()
 }
 
 function changePlayer(value) {
@@ -26,7 +30,7 @@ function changePlayer(value) {
   selectPlayer.innerHTML = player
 }
 
-function WinnerCheck() {
+function winnerCheck() {
   var square_1 = document.getElementById(1)
   var square_2 = document.getElementById(2)
   var square_3 = document.getElementById(3)
@@ -105,4 +109,19 @@ function checkSequence(firstSquare, secondSquare, thirdSquare) {
   ) {
     return true
   }
+}
+
+function restart() {
+  winner = null;
+  selectPlayer.innerHTML = '';
+  selectWinner.innerHTML = '';
+
+  for (let i = 1; i <= 9; i++) {
+    var square = document.getElementById(i);
+    square.style.backgroundColor = '#eee';
+    square.style.color = '#eee';
+    square.innerHTML = '-'
+  }
+
+  changePlayer('X');
 }
