@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  background-color: aquamarine;
+  background-color: rgb(40, 48, 44);
 }
 
 .main-game {
@@ -20,4 +20,33 @@ body {
   border-radius: 100%;
   width: 700px;
   height: 700px;
+  cursor: pointer;
+}
+
+.blue {
+  grid-area: blue;
+  background-color: rgb(19, 200, 245);
+  border-bottom-right-radius: 100%;
+}
+
+.red {
+  grid-area: red;
+  background-color: #ff0000;
+  border-top-right-radius: 100%;
+}
+
+.yellow {
+  grid-area: yellow;
+  background-color: #ffff00;
+  border-bottom-left-radius: 100%;
+}
+
+.green {
+  grid-area: green;
+  background-color: #00ff00;
+  border-top-left-radius: 100%;
+}
+
+.selected {
+  opacity: 0.8;
 }
