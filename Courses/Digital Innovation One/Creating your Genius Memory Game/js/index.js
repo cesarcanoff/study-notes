@@ -82,13 +82,14 @@ let nextLevel = () => {
 }
 
 let gameOver = () => {
-  alert(`Pontuação ${acore}\nVocê perdeu o jogo\nCLique em OK Para iniciar um novo jogo`);
+  alert(`Pontuação ${acore}\nVocê perdeu o jogo\nClique em OK Para iniciar um novo jogo`);
   order = [];
   clickedOrder = [];
 
   playGame();
 }
 
+// COMEÇO DO JOGO
 let playGame = () => {
   alert("Bem-vindo ao Genius! Iniciando um novo jogo.")
   score = 0;
@@ -101,4 +102,10 @@ red.addEventListener('click', click(1));
 yellow.addEventListener('click', click(2));
 blue.addEventListener('click', click(3));
 
+green.onclick = () => click(0);
+red.onclick = () => click(1);
+yellow.onclick = () => click(2);
+blue.onclick = () => click(3);
+
+// INICIANDO DO JOGO
 playGame();
