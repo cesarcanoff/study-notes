@@ -1,5 +1,6 @@
 const yourShip = document.querySelector('.player-shooter');
 const playArea = document.querySelector('#main-play-area');
+const aliensImages = ['../images/monster-1.png', '../images/monster-2.png', '../images/monster-3.png'];
 
 // AÇÕES DA NAVE
 function flyShip (event) {
@@ -68,6 +69,19 @@ function moveLaser (laser) {
       laser.style.left = `${xPosition + 8}px`;
     }
   }, 10)
+}
+
+// CRIANDO ALIENS ALEATÓRIOS
+function createAliens () {
+  let newAlien = document.createElement('img');
+  let alienSprite = aliensImages[Math.floor(Math.random() * aliensImages.length)]; // SORTEIO DE IMAGENS DE ALIENS.
+  newAlien.src = alienSprite;
+  newAlien.classList.add('alien');
+  newAlien.classList.add('alien-transition');
+  newAlien.style.left = '370px';
+  newAlien.style.top = `${Math.floor(Math.random() * 330) + 30}px`;
+  playArea.appendChild(newAlien);
+  moveAlien(newAlien);
 }
 
 window.addEventListener('keydown', flyShip);
