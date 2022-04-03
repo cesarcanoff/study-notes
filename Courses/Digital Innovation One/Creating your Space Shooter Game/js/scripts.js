@@ -1,3 +1,5 @@
+// FEATURE - IMPLEMENTAR O SISTEMA DE SCORE.
+
 const yourShip = document.querySelector('.player-shooter');
 const playArea = document.querySelector('#main-play-area');
 const aliensImg = [
@@ -5,6 +7,9 @@ const aliensImg = [
   '../images/monster-2.png',
   '../images/monster-3.png'
 ];
+
+var score = document.getElementById('score')
+
 const instructionsText = document.querySelector('.game-instructions');
 const startButton = document.querySelector('.start-button');
 let alienInterval;
@@ -28,7 +33,7 @@ function moveUp() {
     return;
   } else {
     let position = parseInt(topPosition);
-    position -= 50;
+    position -= 30;
     yourShip.style.top = `${position}px`;
   }
 }
@@ -39,7 +44,7 @@ function moveDown() {
     return;
   } else {
     let position = parseInt(topPosition);
-    position += 50;
+    position += 30;
     yourShip.style.top = `${position}px`;
   }
 }
@@ -79,7 +84,7 @@ function moveLaser(laser) {
     } else {
       laser.style.left = `${xPosition + 8}px`;
     }
-  }, 10);
+  }, 5);
 }
 
 function createAliens() {

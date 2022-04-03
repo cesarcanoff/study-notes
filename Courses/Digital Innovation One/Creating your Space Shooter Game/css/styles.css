@@ -8,6 +8,7 @@ body {
   margin: 0;
   font-family: sans-serif;
   background-color: cornflowerblue;
+  color: #fff;
 }
 
 #main-play-area {
@@ -15,6 +16,7 @@ body {
   background-image: url('../images/space.png');
   width: 600px;
   height: 600px;
+  padding: 2%;
 }
 
 .game-instructions {
