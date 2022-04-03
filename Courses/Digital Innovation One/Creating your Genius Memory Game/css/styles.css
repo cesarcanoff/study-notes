@@ -1,11 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap');
+
 body {
   margin: 0;
   background-color: rgb(40, 48, 44);
+  font-family: 'Open Sans';
+}
+
+:root {
+  --red: #ff0000;
+  --blue: #13c8f5;
+  --green: #00ff00;
+  --yellow: #ffff00;
+  --white: #fff;
 }
 
 .main-game {
   width: 100vw;
-  height: 100vh;
+  height: 70vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -15,35 +26,47 @@ body {
   display: grid;
   grid-template-areas: 'green red' 'yellow blue';
   grid-gap: 10px;
-  border: 1px solid #fff;
-  background-color: #fff;
+  border: 1px solid var(--white);
+  background-color: var(--white);
   border-radius: 100%;
   width: 700px;
   height: 700px;
   cursor: pointer;
+  border: 0;
+}
+
+.title {
+  width: 100vw;
+  text-align: center;
+  font-size: 52px;
+}
+.redText {
+  display: inline-block;
+  color: var(--red);
+  text-shadow: 1px 5px 2px var(--white);
 }
 
 .blue {
   grid-area: blue;
-  background-color: rgb(19, 200, 245);
+  background-color: var(--blue);
   border-bottom-right-radius: 100%;
 }
 
 .red {
   grid-area: red;
-  background-color: #ff0000;
+  background-color: var(--red);
   border-top-right-radius: 100%;
 }
 
 .yellow {
   grid-area: yellow;
-  background-color: #ffff00;
+  background-color: var(--yellow);
   border-bottom-left-radius: 100%;
 }
 
 .green {
   grid-area: green;
-  background-color: #00ff00;
+  background-color: var(--green);
   border-top-left-radius: 100%;
 }
 
