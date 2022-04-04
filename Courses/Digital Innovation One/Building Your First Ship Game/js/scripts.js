@@ -155,7 +155,7 @@ function colisao() {
 
 function explosao1(inimigo1X, inimigo1Y) {
   $('#fundoGame').append("<div id='explosao1'></div")
-  $('#explosao1').css('background-image', 'url(imgs/explosao.png)')
+  $('#explosao1').css('background-image', 'url(images/explosao.png)')
   var div = $('#explosao1')
   div.css('top', inimigo1Y)
   div.css('left', inimigo1X)
@@ -218,7 +218,7 @@ if (colisao5.length > 0) {
 
 function explosao2(inimigo2X, inimigo2Y) {
   $('#fundoGame').append("<div id='explosao2'></div")
-  $('#explosao2').css('background-image', 'url(imgs/explosao.png)')
+  $('#explosao2').css('background-image', 'url(image/explosao.png)')
   var div2 = $('#explosao2')
   div2.css('top', inimigo2Y)
   div2.css('left', inimigo2X)
@@ -320,19 +320,19 @@ energia()
 
 function energia() {
   if (energiaAtual == 3) {
-    $('#energia').css('background-image', 'url(imgs/energia3.png)')
+    $('#energia').css('background-image', 'url(image/energia3.png)')
   }
 
   if (energiaAtual == 2) {
-    $('#energia').css('background-image', 'url(imgs/energia2.png)')
+    $('#energia').css('background-image', 'url(image/energia2.png)')
   }
 
   if (energiaAtual == 1) {
-    $('#energia').css('background-image', 'url(imgs/energia1.png)')
+    $('#energia').css('background-image', 'url(image/energia1.png)')
   }
 
   if (energiaAtual == 0) {
-    $('#energia').css('background-image', 'url(imgs/energia0.png)')
+    $('#energia').css('background-image', 'url(image/energia0.png)')
   }
 }
 
