@@ -279,3 +279,31 @@ function explosao3(amigoX, amigoY) {
     tempoExplosao3 = null
   }
 }
+
+$('#fundoGame').append("<div id='placar'></div>")
+
+var pontos = 0
+var salvos = 0
+var perdidos = 0
+
+pontos = pontos + 100
+
+pontos = pontos + 50
+
+salvos++
+
+perdidos++
+
+placar()
+
+function placar() {
+  $('#placar').html(
+    '<h2> Pontos: ' +
+      pontos +
+      ' Salvos: ' +
+      salvos +
+      ' Perdidos: ' +
+      perdidos +
+      '</h2>'
+  )
+}
