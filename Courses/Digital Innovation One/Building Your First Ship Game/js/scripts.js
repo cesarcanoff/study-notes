@@ -258,3 +258,24 @@ function reposicionaAmigo() {
     }
   }
 }
+
+if (colisao6.length > 0) {
+  amigoX = parseInt($('#amigo').css('left'))
+  amigoY = parseInt($('#amigo').css('top'))
+  explosao3(amigoX, amigoY)
+  $('#amigo').remove()
+
+  reposicionaAmigo()
+}
+
+function explosao3(amigoX, amigoY) {
+  $('#fundoGame').append("<div id='explosao3' class='anima4'></div")
+  $('#explosao3').css('top', amigoY)
+  $('#explosao3').css('left', amigoX)
+  var tempoExplosao3 = window.setInterval(resetaExplosao3, 1000)
+  function resetaExplosao3() {
+    $('#explosao3').remove()
+    window.clearInterval(tempoExplosao3)
+    tempoExplosao3 = null
+  }
+}
