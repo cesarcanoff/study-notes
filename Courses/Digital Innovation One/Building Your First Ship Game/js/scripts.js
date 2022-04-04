@@ -387,3 +387,9 @@ function gameOver() {
 }
 
 gameOver()
+
+function reiniciaJogo() {
+  somGameover.pause()
+  $('#fim').remove()
+  start()
+}
