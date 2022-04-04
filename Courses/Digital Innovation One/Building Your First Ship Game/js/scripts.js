@@ -307,3 +307,31 @@ function placar() {
       '</h2>'
   )
 }
+
+$('#fundoGame').append("<div id='energia'></div>")
+
+var energiaAtual = 3
+
+energiaAtual--
+
+energia()
+
+//Barra de energia
+
+function energia() {
+  if (energiaAtual == 3) {
+    $('#energia').css('background-image', 'url(imgs/energia3.png)')
+  }
+
+  if (energiaAtual == 2) {
+    $('#energia').css('background-image', 'url(imgs/energia2.png)')
+  }
+
+  if (energiaAtual == 1) {
+    $('#energia').css('background-image', 'url(imgs/energia1.png)')
+  }
+
+  if (energiaAtual == 0) {
+    $('#energia').css('background-image', 'url(imgs/energia0.png)')
+  }
+}
