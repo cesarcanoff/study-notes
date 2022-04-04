@@ -335,3 +335,5 @@ function energia() {
     $('#energia').css('background-image', 'url(imgs/energia0.png)')
   }
 }
+
+velocidade = velocidade + 0.3
