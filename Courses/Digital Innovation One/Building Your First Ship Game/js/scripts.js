@@ -130,3 +130,11 @@ function disparo() {
     }
   }
 }
+
+colisao()
+
+function colisao() {
+  var colisao1 = $('#jogador').collision($('#inimigo1'))
+
+  console.log(colisao1)
+}
