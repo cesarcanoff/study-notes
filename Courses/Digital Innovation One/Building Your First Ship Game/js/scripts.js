@@ -52,3 +52,13 @@ function movejogador() {
     //Chama função Disparo
   }
 }
+
+if (topo<=0) {
+		
+	$("#jogador").css("top",topo+10);
+}
+
+if (topo>=434) {	
+	$("#jogador").css("top",topo-10);
+		
+}
