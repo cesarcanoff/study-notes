@@ -1,7 +1,11 @@
+body {
+  background-color: #ccc;
+} 
+
 .dino {
   width: 60px;
   height: 60px;
-  background-color: green;
+  background-image: url('../images/dino.png');
   position: absolute;
   bottom: 15px;
 }
@@ -11,5 +15,33 @@
   width: 60px;
   height: 60px;
   bottom: 15px;
-  background-color: red;
+  background-image: url('../images/cactus.png');
+}
+
+.game-over {
+  text-align: center;
+  font-size: 66px;
+  margin-top: 50%;
+  color: rgb(22, 22, 22);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@keyframes sliderRight {
+  from {
+    background-position: 70000%;
+  }
+
+  to {
+    background-position: 0;
+  }
+}
+
+.background {
+  position: absolute;
+  bottom: 10;
+  background-image: url('../images/background.png');
+  background-repeat: repeat-x;
+  animation: sliderRight 600s infinite linear;
+  width: 100%;
+  height: 200px;
 }
