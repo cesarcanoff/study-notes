@@ -1,0 +1,19 @@
+<html>
+  <head>
+    <title>To Do App</title>
+    <link rel="stylesheet" href="/public/css/style.css" />
+  </head>
+  <body>
+    <div class="tasks">
+
+      <form method="POST">
+        <input type="text" name="task" />
+        <input type="submit" value="Inserir" />
+      </form>
+
+      <% for (let i = 0; i < tasksList.length; i++) { %>
+      <p><%= tasksList[i] %> | <a href="/deletar/<%= i %>">X</a></p>
+      <% } %>
+    </div>
+  </body>
+</html>
