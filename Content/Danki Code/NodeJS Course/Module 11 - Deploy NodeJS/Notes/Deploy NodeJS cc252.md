@@ -1,0 +1,3 @@
+# Deploy NodeJS
+
+Configurações de AWS, EC2, INSTÂNCIAS, CRIAÇÃO DA CONEXÃO, INSTALAÇÃO DO NODE E NGIX.
