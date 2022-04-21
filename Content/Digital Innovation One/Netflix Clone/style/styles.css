@@ -46,3 +46,77 @@ header nav a {
 header nav a:hover {
   color: #fff;
 }
+
+main {
+  width: 100vw;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+}
+
+main .banner-principal {
+  width: 100vw;
+  height: 70%;
+}
+
+main .container {
+  display: flex;
+  height: 100%;
+}
+
+main .halfOne {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #141414;
+}
+
+main .halfOne p {
+  font-size: 1.5rem;
+  margin: 25px 0;
+  text-align: center;
+  color: #aaa;
+  width: 70%;
+}
+
+main .halfOne .call-action {
+  display: flex;
+  width: 70%;
+  justify-content: space-between;
+}
+
+main .halfOne .call-action button {
+  height: 45px;
+  width: 40%;
+  padding: 1%;
+  cursor: pointer;
+}
+
+main .halfOne .call-action button:nth-child(1) {
+  background-color: #fff;
+  color: #000;
+  font-weight: bold;
+  font-size: 1.1rem;
+  border-radius: 7px;
+}
+
+main .halfOne .call-action button:nth-child(2) {
+  background-color: rgb(158, 157, 157);
+  color: #fff;
+  font-size: 1.1rem;
+  border-radius: 7px;
+}
+
+main .halfOne img {
+  width: 60%;
+}
+
+main .banner {
+  width: 60%;
+  background-image: url('../images/stranger-things-banner.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
