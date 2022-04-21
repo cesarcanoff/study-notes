@@ -3,9 +3,46 @@
   padding: 0;
   border: 0;
   box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'Bebas Neue', Arial, Helvetica, sans-serif;
 }
 
-html, body {
+:root {
+  --red: #e50914;
+  --black: #141414;
+}
+
+html,
+body {
   height: 100%;
 }
 
+body {
+  background-color: var(--black);
+}
+
+header {
+  padding: 1% 2%;
+}
+
+header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header h2.logo {
+  color: var(--red);
+  font-size: 2.5rem;
+  cursor: pointer;
+}
+
+header nav a {
+  color: #aaa;
+  font-size: 1.2rem;
+  margin: 0 10px;
+}
+
+header nav a:hover {
+  color: #fff;
+}
