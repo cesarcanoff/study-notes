@@ -4,7 +4,12 @@
     var _a;
     const $ = (query) => document.querySelector(query);
     function patio() {
-        function ler() { }
+        function ler() {
+            return localStorage.patio ? JSON.parse(localStorage.patio) : [];
+        }
+        function salvar(veiculos) {
+            localStorage.setItem('patio', JSON.stringify(veiculos));
+        }
         function adicionar(veiculo) {
             var _a;
             const row = document.createElement("tr");
@@ -17,9 +22,9 @@
         </td>
       `;
             (_a = $('#patio')) === null || _a === void 0 ? void 0 : _a.appendChild(row);
+            salvar([...ler(), veiculo]);
         }
         function remover() { }
-        function salvar() { }
         function renderizar() { }
         return { ler, adicionar, remover, salvar, renderizar };
     }
@@ -27,8 +32,10 @@
         var _a, _b;
         const nome = (_a = $('#nome')) === null || _a === void 0 ? void 0 : _a.value;
         const placa = (_b = $('#placa')) === null || _b === void 0 ? void 0 : _b.value;
-        if (!nome || !placa)
+        if (!nome || !placa) {
             alert('Os campos NOME e PLACA são obrigatórios!');
+            return;
+        }
         patio().adicionar({ nome, placa, entrada: new Date() });
     });
 })();
