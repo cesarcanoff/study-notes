@@ -1,7 +1,7 @@
 interface Veiculo {
-  nome: string;
-  placa: string;
-  entrada: Date;
+  nome: string
+  placa: string
+  entrada: Date
 }
 
 ;(() => {
@@ -9,16 +9,16 @@ interface Veiculo {
     document.querySelector(query)
 
   function patio() {
-    function ler() {
-      return localStorage.patio ? JSON.parse(localStorage.patio) : [];
-    }
-    
-    function salvar(veiculos: Veiculo[]) {
-      localStorage.setItem('patio', JSON.stringify(veiculos));
+    function ler(): Veiculo[] {
+      return localStorage.patio ? JSON.parse(localStorage.patio) : []
     }
 
-    function adicionar(veiculo: Veiculo) {
-      const row = document.createElement("tr");
+    function salvar(veiculos: Veiculo[]) {
+      localStorage.setItem('patio', JSON.stringify(veiculos))
+    }
+
+    function adicionar(veiculo: Veiculo, salva?: boolean) {
+      const row = document.createElement('tr')
       row.innerHTML = `
         <td>${veiculo.nome}</td>
         <td>${veiculo.placa}</td>
@@ -26,26 +26,35 @@ interface Veiculo {
         <td>
         <button class="delete" data-placa="${veiculo.placa}">X</button>
         </td>
-      `;
+      `
 
-      $('#patio')?.appendChild(row);
+      $('#patio')?.appendChild(row)
 
-      salvar([...ler(), veiculo])
+      if (salva) salvar([...ler(), veiculo])
     }
     function remover() {}
-    function renderizar() {}
+    function render() {
+      $('#patio')!.innerHTML = ''
+      const patio = ler()
+      if (patio.length) {
+        patio.forEach((veiculo) => adicionar(veiculo))
+      }
+    }
 
-    return { ler, adicionar, remover, salvar, renderizar };
+    return { ler, adicionar, remover, salvar, render }
   }
+
+  patio().render()
 
   $('#cadastrar')?.addEventListener('click', () => {
     const nome = $('#nome')?.value
     const placa = $('#placa')?.value
 
     if (!nome || !placa) {
-      alert('Os campos NOME e PLACA são obrigatórios!');
+      alert('Os campos NOME e PLACA são obrigatórios!')
       return
     }
-    patio().adicionar({ nome, placa, entrada: new Date()})
+    patio().adicionar({ nome, placa, entrada: new Date() }, true)
   })
 })()
+
