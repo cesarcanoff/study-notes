@@ -1,0 +1,128 @@
+# JavaScript - Trabalhando com Módulos no JavaScript
+
+## Aula 01 - Utilização
+
+### Objetivos
+
+1. Explicar o que são módulos em JavaScript;
+2. Ensinar como utilizar esses módulos;
+3. Alertar para algumas particularidades.
+
+---
+
+### O que são os módulos
+
+Módulos arquivos JavaScript que tem a capacidade de **exportar** e **importar** informações de **outros arquivos** do mesmo tipo.
+
+---
+
+### Algumas Vantagens
+
+- Organização do código;
+- Compartilhamento de variáveis em escopos diferentes;
+- Explicita as dependências dos arquivos.
+
+---
+
+### Exportar - Named Exports
+
+```jsx
+export function mostraIdade(pessoa) {
+	return `A idade de ${pessoa.nome} é ${pessoa.idade}`;
+}
+
+export function mostraCidade(pessoa) {
+	return `A cidade de ${pessoa.nome} é ${pessoa.cidade}`;
+}
+
+export function mostraHobby(pessoa) {
+	return `O hobby de ${pessoa.nome} é ${pessoa.hobby}`;
+}
+```
+
+```jsx
+function mostraIdade(pessoa) {
+	return `A idade de ${pessoa.nome} é ${pessoa.idade}`;
+}
+
+function mostraCidade(pessoa) {
+	return `A cidade de ${pessoa.nome} é ${pessoa.cidade}`;
+}
+
+function mostraHobby(pessoa) {
+	return `O hobby de ${pessoa.nome} é ${pessoa.hobby}`;
+}
+
+export {
+ mostraIdade,
+ mostraCidade,
+ mostraHobby
+};
+```
+
+### Default Exports
+
+- Só pode haver um por arquivo;
+- Será o retorno padrão do seu arquivo.
+
+```jsx
+function mostraIdade(pessoa) {
+	return `A idade de ${pessoa.nome} é ${pessoa.idade}`;
+}
+
+function mostraCidade(pessoa) {
+	return `A cidade de ${pessoa.nome} é ${pessoa.cidade}`;
+}
+
+function mostraHobby(pessoa) {
+	return `O hobby de ${pessoa.nome} é ${pessoa.hobby}`;
+}
+
+export {
+ mostraIdade,
+ mostraCidade
+};
+
+export default mostraHobby;
+```
+
+### Importar
+
+- Named Exports:
+    
+    ```jsx
+    import { funcao, variavel, classe } from './arquivo.js';
+    ```
+    
+- Default Exports
+    
+    ```jsx
+    import valorDefault from './arquivo.js';
+    ```
+    
+
+### Trocando nome de imports
+
+```jsx
+import { arquivo as Apelido } from './arquivo.js';
+Apelido.metodo();
+```
+
+### Importando todos os dados de um arquivo
+
+```jsx
+import * as INFOS from './arquivos.js';
+INFOS.metodoA();
+console.log(INFOS.variavel);
+```
+
+### Vinculando ao HTML
+
+```html
+<script type="module" src="./main.js"></script>
+```
+
+<aside>
+💡 Para fazer testes localmente (de um arquivo no seu computador), será necessário estar rodando um servidor. Isso pode ser feito utilizando a extensão “*Live Server*” do Visual Studio Code.
+
+</aside>
