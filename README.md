@@ -88,11 +88,11 @@ I kindly ask that if you find any errors or broken links in the **summary**, ple
 
 <hr />
 
-<center>
+<div align="center">
   <a target="_blank" href="https://api.whatsapp.com/send?phone=5567998847151">
     <img src="https://img.shields.io/badge/WhatsApp-05122A?style=for-the-badge&logo=whatsapp&logoColor=25D366" /> 
   </a>
   <a target="_blank" href="mailto:canoff.cesar@gmail.com">
     <img src="https://img.shields.io/badge/Gmail-05122A?style=for-the-badge&logo=gmail&logoColor=D14836" /> 
   </a>
-</center>
+</div>
