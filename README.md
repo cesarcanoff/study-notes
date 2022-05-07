@@ -17,14 +17,14 @@ Technological events in general.
 **Best regards, Cesar Canoff.**
 
 ### Sumário
-- <a href="./Content">Content</a>
-- <a href="./Projects">Projects</a>
-  - <a href="./Projects/Digital Innovation One">Digital Innovation One</a>
-    - <a href="./Projects/Digital Innovation One/Building Your First Ship Game">Building Your First Ship Game</a>
-    - <a href="./Projects/Digital Innovation One/Creating your Genius Memory Game">Creating your Genius Memory Game</a>
-    - <a href="./Projects/Digital Innovation One/Creating your Space Shooter Game">Creating your Space Shooter Game</a>
-    - <a href="./Projects/Digital Innovation One/Learn How to Create a Parking System Using TypeScript">Learn How to Create a Parking System Using TypeScript</a>
-    - <a href="./Projects/Digital Innovation One/Project: Creating your own Tic Tac Toe with HTML and Javascript">Creating your own Tic Tac Toe with HTML and Javascript</a>
-  - <a href="./Projects/Frontend Mentor">Frontend Mentor</a>
-  - <a href="./Projects/IFMS - Technical Course">IFMS - Technical Course</a>
-   - <a href="./Projects/Training Projects">Training Projects</a>
+- <a href="./content">Content</a>
+- <a href="./projects">Projects</a>
+  - <a href="./projects/digital-innovation-one">Digital Innovation One</a>
+    - <a href="./projects/digital-innovation-one/building-your-first-ship-game">Building Your First Ship Game</a>
+    - <a href="./projects/digital-innovation-one/creating-your-genius-memory-game">Creating your Genius Memory Game</a>
+    - <a href="./projects/digital-innovation-one/creating-your-space-shooter-game">Creating your Space Shooter Game</a>
+    - <a href="./projects/digital-innovation-one/learn-how-to-create-a-parking-system-using-typescript">Learn How to Create a Parking System Using TypeScript</a>
+    - <a href="./projects/digital-innovation-one/creating-your-own-tic-tac-toe-with-html-and-javascript">Creating your own Tic Tac Toe with HTML and Javascript</a>
+  - <a href="./projects//frontend-mentor">Frontend Mentor</a>
+  - <a href="./projects/ifms-technical-course">IFMS - Technical Course</a>
+   - <a href="./projects/training-projects">Training Projects</a>
