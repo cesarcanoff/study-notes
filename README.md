@@ -67,6 +67,9 @@ I kindly ask that if you find any errors or broken links in the **summary**, ple
           - <a href="./content/rocketseat/discover/tracks/foundation/positioning-the-rocket">Positioning The Rocket</a>
           - <a href="./content/rocketseat/discover/tracks/foundation/the-stellar-guide-to-css">The Stellar Guide To CSS</a>
           - <a href="./content/rocketseat/discover/tracks/foundation/the-stellar-guide-to-html">The Stellar Guide To HTML</a>
+    - <a href="./content/rocketseat/next-level-week">Next Level Week</a>
+      - <a href="./content/rocketseat/next-level-week/return">Return</a>
+        - <a href="./content/rocketseat/next-level-week/return/feedback-widget">Feedback Widget (Feedget)</a>
   - <a href="./content/youtube">YouTube</a>
     - <a href="./content/youtube/finances-course-shirleyson-kaisser">Finances Course - Shirleyson Kaisser</a>
 - <a href="./projects">Projects</a>
