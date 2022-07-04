@@ -1,3 +1,20 @@
+## Hooks
+```js
+import { useState } from "react";
+
+export default function SmartCounter() {
+  const [quantity, setQuantity] = useState(1);
+
+  return (
+    <>
+      <h1>{quantity}</h1>
+      <button onClick={() => setQuantity(quantity + 1)}>Aumentar</button>
+    </>
+  );
+}
+
+```
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
