@@ -1,0 +1,26 @@
+body {
+  text-align: center;
+}
+
+h1, h2, h3 {
+  background-color: #000;
+  color: greenyellow;
+}
+
+.div-1 {
+  background-color: chocolate;
+  color: aqua;
+}
+
+.div-2 {
+  background-color: darkmagenta;
+  color: yellow;
+}
+
+.div-1 > span {
+  font-size: 2rem;
+}
+
+#id_classe {
+  color: green;
+}
