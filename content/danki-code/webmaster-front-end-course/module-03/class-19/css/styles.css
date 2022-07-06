@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+ul.list, ul.list2 {
+  list-style-position: inside;
+  margin-left: 20px;
+}
+
+.list li, .list2 li {
+  color: green;
+  font-size: 1.7rem;
+  color: #4b4b4b;
+  margin-top: 10px;
+}
+
+.list .item_3, .list2 .item_3 {
+  font-weight: bold;
+}
+
+ol {
+  list-style-position: inside;
+  margin-left: 50px;
+}
+
+ol > li {
+  color: purple;
+}
+
+.um {
+  width: 500px;
+  height: 500px;
+  background-color: red;
+}
+
+.um > .dois {
+  width: 300px;
+  height: 300px;
+  background-color: blueviolet;
+}
+
+.um > .tres {
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+}
+
+.um > .tres > .quatro {
+  width: 50px;
+  height: 50px;
+  background-color: coral;
+}
