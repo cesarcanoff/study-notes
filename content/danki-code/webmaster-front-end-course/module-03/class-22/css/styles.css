@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+.center {
+  width: 1280px;
+  margin: 30px;
+  background-color: brown;
+  padding: 30px;
+}
+
+.artigo {
+  /* width: 1280px;
+  margin: 40px 30px; */
+}
