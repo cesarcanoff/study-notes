@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: Arial;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+input.text[type="text"] {
+  background-color: green;
+}
+
+input[type="submit"] {
+  background-color: blue;
+}
+
+/* Estilizando por atributos 
+
+Estilizando por valor do href 
+a[href='https://www.google.com']
+{
+  background-color: yellow;
+}
+
+Estilizando por href que contém determinadas palavras 
+a[href*="google"],
+a[href*="danki"] {
+  background-color: yellow;
+}
+
+Procurando por palavras com espaços 
+a[href~="google"] {
+  background-color: yellow;
+}
+
+Atributo dividido com hífen e começado com a palavra 
+a[href|="google"] {
+  background-color: yellow;
+}
+
+Atributo começado com a palavra 
+a[href^="google"] {
+  background-color: yellow;
+}
+
+Atributo terminado com a palavra 
+a[href$="google"] {
+  background-color: yellow;
+} 
+
+*/
