@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: Arial;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+.bg {
+  /* width: 100vw;
+  height: 40vh;
+  background-image: url("../images/model-image.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: 100% 100%; */
+}
+
+.box {
+  width: 100%;
+  margin: 80px auto;
+  text-align: center;
+  background-color: darkgrey;
+}
+
+.item {
+  margin: 5px 40px;
+  display: inline-block;
+  margin-right: -4px;
+  width: 33.3%;
+  background-color: crimson;
+}
