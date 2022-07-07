@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+/* .center {
+  box-sizing: border-box;
+  width: 1280px;
+  margin: 0 auto;
+  background-color: gray;
+}
+
+.artigo {
+  vertical-align: top;
+  margin-right: 10px 17px;
+  margin-top: 30px;
+  border: 3px dotted blue;
+  display: inline-block;
+  width: 640px;
+} */
+
+span {
+  width: 30px;
+  height: 30px;
+  background-color: red;
+}
