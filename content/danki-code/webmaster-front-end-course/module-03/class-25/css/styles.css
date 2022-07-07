@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+.box {
+  width: 300px;
+  height: 100px;
+  margin: 0 auto;
+  background-color: gray;
+  overflow: hidden;
+  /* 
+    Escondendo
+    o texto que extrapolar
+    o tamanho da box
+  */
+}
