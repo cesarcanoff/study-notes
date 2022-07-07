@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: Arial;
+}
+
+/* Inherit 
+
+.box {
+  width: 400px;
+  height: 400px;
+  background-color: gray;
+  color: green;
+}
+
+.box_2 {
+  width: 240px;
+  background-color: yellow;
+}
+
+.box > .box_2 span {
+  color: inherit;
+  width: inherit;
+  height: inherit;
+  display: inline-block;
+  background-color: inherit;
+}
+*/
+
+/* Auto */
+
+.box {
+  width: 400px;
+  height: 400px;
+  background-color: gray;
+  color: green;
+}
+
+.box_2 {
+  width: 240px;
+  background-color: yellow;
+}
+
+.box > .box_2 span {
+  color: inherit;
+  width: inherit;
+  height: inherit;
+  display: inline-block;
+  background-color: inherit;
+}
