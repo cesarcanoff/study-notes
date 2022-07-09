@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form>
+      <fieldset>
+        <legend>Meu formulário</legend>
+        <div>
+          <input type="text" name="nome" placeholder="Insira seu nome:" />
+        </div>
+        <div>
+          <input type="text" name="email" placeholder="Insira seu email:" />
+        </div>
+        <div>
+          <select name="lista">
+            <option value="" disabled selected>Qual sua idade?</option>
+            <option value="">20</option>
+            <option value="">25+</option>
+            <option value="">40+</option>
+          </select>
+        </div>
+        <h2>Qual a sua cidade?</h2>
+        <div class="input">
+          <div><input type="radio" name="city" /><span>New York</span></div>
+          <div><input type="radio" name="city" /><span>Porto</span></div>
+          <div><input type="radio" name="city" /><span>São Paulo</span></div>
+        </div>
+        <h2>O que você gosta de comer?</h2>
+        <div class="input">
+          <div><input type="checkbox" name="food" /><span>Frutas</span></div>
+          <div><input type="checkbox" name="food" /><span>Fast Food</span></div>
+          <div><input type="checkbox" name="food" /><span>Salada</span></div>
+        </div>
+        <div>
+          <textarea placeholder="Possui alguma observação?"></textarea>
+        </div>
+        <div>
+          <input type="submit" value="Enviar" />
+        </div>
+      </fieldset>
+    </form>
+  </body>
+</html>

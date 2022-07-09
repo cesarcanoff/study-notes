@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: Arial;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+form {
+  width: 96%;
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+form fieldset {
+  padding: 20px 40px;
+  border: 1px solid #ccc;
+}
+
+form legend {
+  text-align: center;
+  font-size: 1.3rem;
+  color: gray;
+}
+
+form input[type="text"] {
+  margin-top: 30px;
+  display: inline-block;
+  width: 80%;
+  padding: 10px 30px;
+}
+
+form input[type="text"]:focus,
+form select,
+form textarea {
+  outline: 0;
+}
+
+form select {
+  width: 80%;
+  margin-top: 30px;
+  padding: 10px 13px;
+  display: inline-block;
+  border: 1px solid #ccc;
+}
+
+form select option[disabled] {
+  color: red;
+}
+
+form h2 {
+  margin-top: 20px;
+  color: rgb(120, 120, 120);
+}
+
+.input {
+  margin-top: 20px;
+  text-align: left;
+  display: inline-block;
+}
+
+.input span {
+  margin-left: 13px;
+  font-size: 26px;
+  color: rgb(130, 130, 130);
+}
+
+form input[type="submit"] {
+  background-color: rgb(140, 140, 140);
+  color: #fff;
+  width: 80%;
+  height: 40px;
+  cursor: pointer;
+  border: 0;
+  margin-top: 30px;
+}
+
+form textarea {
+  margin-top: 30px;
+  font-family: tahoma;
+  width: 80%;
+  height: 140px;
+  border: 1px solid #ccc;
+  padding: 10px 13px;
+  resize: vertical;
+}
