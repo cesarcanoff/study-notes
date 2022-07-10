@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+minhatag {
+  width: 100%;
+  text-align: center;
+  color: crimson;
+  font-size: 5rem;
+  font-variant: small-caps;
+}
