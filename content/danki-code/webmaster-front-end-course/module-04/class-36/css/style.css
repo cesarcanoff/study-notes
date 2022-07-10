@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+/* IMPORTANDO FONTE DO DIRETÓRIO 
+  @font-face {
+  font-family: 'My Font';
+  src: url('../fonts/myFont.ttf');
+} */
+
+p.text {
+  font-family: tahoma !important;
+  /* 
+    Força o estilo, 
+    nesse caso não precisaria, 
+    mas coloquei para documentar.
+  */
+}
+
+form > * {
+  font-family: "Roboto";
+}
