@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: Arial;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+form {
+  text-align: center;
+  background-color: cornflowerblue;
+  padding: 30px;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+label {
+  margin: 0 30px;
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  background-color: green;
+}
+
+input[type="checkbox"]:checked + label {
+  background-color: red;
+  border: 2px solid yellow;
+}
+
+/* form select {
+  width: 220px;
+  height: 40px;
+  border: 0;
+  padding: 10px;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+select::-ms-expand {
+  display: none;
+} */
+
+/* input[type="file"] {
+  display: none;
+}
+
+label {
+  display: inline-block;
+  background-color: cornflowerblue;
+  width: 150px;
+  height: 40px;
+  margin: 50px 10px;
+  color: #000;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50px;
+  cursor: pointer;
+} */
