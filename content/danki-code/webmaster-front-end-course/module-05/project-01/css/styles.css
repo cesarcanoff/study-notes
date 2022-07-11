@@ -1,8 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  border: 0;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Open Sans", Arial, sans-serif;
   text-decoration: none;
   box-sizing: border-box;
 }
@@ -46,7 +45,63 @@ body {
 
 .form {
   width: 400px;
-  height: 100%;
+  padding: 10px;
+  height: calc(100% + 30px);
   float: right;
+  position: relative;
+  top: -15px;
+  border: 8px solid #ccc;
   background-color: #fff;
+}
+
+.form h2 {
+  font-weight: normal;
+  color: #999;
+  font-size: 21px;
+}
+
+.input-container {
+  margin-top: 20px;
+}
+
+.input-container span,
+.form p {
+  display: inline-block;
+  width: 100%;
+  color: #bbb;
+  font-size: 17px;
+}
+
+.form p {
+  margin: 20px 0;
+}
+
+.input-container input[type="text"],
+.input-container input[type="email"],
+.input-container input[type="tel"] {
+  width: 344px;
+  height: 55px;
+  margin-top: 8px;
+  border: 1px solid #ccc;
+}
+
+.form .input-submit-container {
+  text-align: center;
+}
+
+.form input[type="submit"] {
+  width: 280px;
+  height: 56px;
+  border: 0;
+  text-transform: uppercase;
+  border-bottom: 5px solid #4a5097;
+  font-size: 22px;
+  display: inline-block;
+  cursor: pointer;
+  background-color: #633a6d;
+  color: #fff;
+}
+
+.form input[type="submit"]:hover {
+  background-color: #323665;
 }

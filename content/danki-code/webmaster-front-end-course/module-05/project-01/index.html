@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
   <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap"
+      rel="stylesheet"
+    />
     <meta charset="UTF-8" />
     <title>Project #1</title>
     <link rel="stylesheet" href="css/styles.css" />
@@ -11,11 +17,43 @@
       <div class="center">
         <img src="./images/logo.png" alt="Logo da Danki Code" />
       </div>
-    </div><!-- header -->
+    </div>
+    <!-- header -->
     <div class="container-banner">
       <div class="center">
         <div class="form">
+          <h2>
+            Preencha o formulário e inicie a sua caminhada para virar um
+            webmaster!
+          </h2>
+          <form>
+            <div class="input-container">
+              <span>Nome*</span>
+              <input type="text" name="nome" placeholder="Nome:" required />
+            </div><!-- input-container -->
 
+            <div class="input-container">
+              <span>E-mail*</span>
+              <input type="email" name="email" placeholder="E-mail:" required />
+            </div><!-- input-container -->
+
+            <div class="input-container">
+              <span>Telefone*</span>
+              <input
+                type="tel"
+                name="telefone"
+                placeholder="Número de Telefone:"
+                required
+              />
+            </div><!-- input-container -->
+
+            <p class="warning">Campos obrigatórios (*)</p>
+
+            <div class="input-submit-container">
+              <input type="submit" name="acao" value="Enviar" />
+            </div><!-- input-container -->
+
+          </form>
         </div><!-- form -->
       </div><!-- center -->
     </div><!-- container-banner -->
