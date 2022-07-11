@@ -12,7 +12,7 @@ body {
 }
 
 .center {
-  width: 1280px;
+  width: 1200px;
   border: 1px solid red;
   margin: 0 auto;
 }
@@ -50,7 +50,8 @@ body {
   float: right;
   position: relative;
   top: -15px;
-  border: 8px solid #ccc;
+  border: 8px solid rgba(120, 120, 120, 0.5);
+  background-clip: padding-box;
   background-color: #fff;
 }
 
@@ -104,4 +105,50 @@ body {
 
 .form input[type="submit"]:hover {
   background-color: #323665;
+}
+
+.container-list {
+  margin-top: 40px;
+  float: left;
+  padding: 30px;
+  width: 619px;
+  height: 270px;
+  background-color: rgba(33, 35, 67, 0.7);
+}
+
+.container-list ul {
+  list-style-position: inside;
+}
+
+.container-list ul li {
+  color: #fff;
+  margin-top: 18px;
+  font-size: 1.3rem;
+}
+
+.container-2 {
+  padding: 40px 0;
+  background-color: #ccc;
+  text-align: center;
+}
+
+.container-2 h2 {
+  font-weight: normal;
+}
+
+.container-2 p {
+  width: 798px;
+  margin: 15px 0;
+  display: inline-block;
+  text-align: justify;
+}
+
+.arrow {
+  width: 40px;
+  height: 40px;
+  position: relative;
+  margin: 0 auto;
+  top: 55px;
+  background-image: url("../images/arrow.png");
+  background-size: 100%;
 }
