@@ -1,0 +1,16 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.parent {
+  width: 50%;
+  height: 400px;
+  background-color: orange;
+}
+
+.box {
+  width: 50%;
+  padding-top: 25%;
+  background-color: #ccc;
+}
