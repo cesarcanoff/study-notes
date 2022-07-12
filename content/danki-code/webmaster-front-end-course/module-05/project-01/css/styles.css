@@ -12,10 +12,9 @@ body {
 }
 
 .center {
-  width: 1200px;
-  border: 1px solid red;
+  width: 100%;
+  max-width: 1280px;
   margin: 0 auto;
-  padding: 0 2%;
 }
 
 .clear {
@@ -23,8 +22,8 @@ body {
 }
 
 .header {
-  min-width: 1200px;
   width: 100%;
+  padding: 0 2%;
   height: 60px;
   background-color: #212343;
 }
@@ -35,7 +34,7 @@ body {
 
 .container-banner {
   width: 100%;
-  min-width: 1200px;
+  padding: 0 2%;
   height: 557px;
   background-image: url("../images/header_bg.png");
   background-size: cover;
@@ -130,8 +129,7 @@ body {
 }
 
 .container-2 {
-  padding: 40px 0;
-  min-width: 1200px;
+  padding: 40px 2%;
   background-color: #ccc;
   text-align: center;
 }
@@ -141,7 +139,7 @@ body {
 }
 
 .container-2 p {
-  width: 798px;
+  width: 100%;
   margin: 15px 0;
   display: inline-block;
   text-align: justify;
@@ -158,7 +156,7 @@ body {
 }
 
 .section-1 {
-  padding: 90px 0;
+  padding: 90px 2%;
 }
 
 .section-1 h2 {
