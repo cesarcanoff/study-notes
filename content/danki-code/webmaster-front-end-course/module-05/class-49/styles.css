@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+.clear {
+  clear: both;
+}
+
+.box {
+  width: 33.3%;
+  border: 1px solid #000;
+  height: 300px;
+  background-color: blueviolet;
+  float: left;
+}
+
+@media screen and (min-width: 580px) {
+  .box {
+    width: 50%;
+  }
+}
+
+/* @media screen and (max-width: 580px) {
+  .box {
+    width: 100%;
+  }
+} */
