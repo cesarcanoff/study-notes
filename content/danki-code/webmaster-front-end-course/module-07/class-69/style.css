@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  flex-direction: column-reverse;
+}
+
+aside {
+  order: 1;
+  background-color: #ccc;
+  padding: 30px;
+}
+
+article {
+  order: 1;
+  background-color: gray;
+}
