@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  padding: 2%;
+}
+
+.box h2 {
+  color: gray;
+  font-size: 24px;
+}
+
+.box p {
+  color: rgb(130, 130, 130);
+  font-size: 25px;
+}
+
+.box2 {
+  margin-top: 50px;
+}
+
+.box2 h2 {
+  color: gray;
+  font-size: 24px;
+}
+
+.box2 p {
+  color: rgb(130, 130, 130);
+  font-size: 25px;
+}
