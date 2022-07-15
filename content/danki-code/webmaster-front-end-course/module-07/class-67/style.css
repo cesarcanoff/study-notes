@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+p {
+  white-space: pre-line;
+}
+
+/* .box {
+  width: 200px;
+  padding: 30px 2%;
+  background-color: rgb(220, 220, 220);
+  position: relative;
+}
+
+.box p {
+  word-break: keep-all;
+  display: inline;
+  border-bottom: 2px solid green;
+  color: #444;
+} */
