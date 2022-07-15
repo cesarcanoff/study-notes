@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+.box {
+  width: 30%;
+  padding-top: 30%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.transform {
+  transform: translate(-50%, -50%); /* CENTRALIZANDO COM TRANSFORM */
+  width: 40%;
+  max-width: 500px;
+  height: 40%;
+  border: 3px solid rgb(100, 100, 100);
+  border-radius: 8px;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transition: 2s;
+  animation-name: animacao;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes animacao {
+  0% {
+    transform: translate(-50%, -50%) rotateY(0deg);
+  }
+
+  50% {
+    transform: translate(-50%, -50%) rotateY(180deg);
+  }
+
+  100% {
+    transform: translate(-50%, -50%) rotateY(0deg);
+  }
+}
+
+/* .transform:hover {
+  /* transform: translate(-50%, -50%) rotate(45deg) scale(2); 
+  transform: translate(-50%, -50%) rotateX(180deg) rotateY(180deg);
+} */
+
+/* .teste {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  margin: 30px auto;
+  background-color: #000;
+  border-radius: 50%;
+} */
