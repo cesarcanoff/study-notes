@@ -24,11 +24,11 @@ body {
 header {
   width: 100%;
   height: 90vh;
-  max-height: 700px;
   padding: 40px 2%;
   background-size: cover;
   background-position: center;
   background-image: url("../images/capa.png");
+  font-weight: 300;
 }
 
 header nav {
@@ -70,4 +70,59 @@ header li a {
   font-size: 15px;
   color: #fff;
   margin-top: 10px;
+}
+
+section.sessao1 {
+  width: 100%;
+  background-color: #472562;
+  padding: 0 2%;
+}
+
+section.sessao1 .container {
+  max-width: 1000px;
+}
+
+.texto-sessao1 {
+  float: left;
+  color: #fff;
+}
+
+.texto-sessao1 h2 {
+  font-weight: 300;
+}
+
+.texto-sessao1 p {
+  font-size: 13px;
+  margin-top: 20px;
+}
+
+.texto-sessao1 ul {
+  list-style-position: inside;
+  font-size: 13px;
+}
+
+.texto-sessao1 ul li {
+  float: left;
+  width: 100%;
+}
+
+.btn1-texto {
+  background-color: #ff703d;
+  width: 165px;
+  height: 44px;
+  line-height: 44px;
+  color: #fff;
+  cursor: pointer;
+  text-align: center;
+  border-radius: 30px;
+  margin-top: 10px;
+}
+
+.device-sessao1 {
+  float: left;
+  width: 50%;
+  height: 300px;
+  background-image: url("../images/device.png");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
 }
